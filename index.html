@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
 
@@ -16,8 +15,14 @@
         <hr class="my-4">
     </header>
 
+    <div id="coffees">
+        <!-- THIS IS WHERE THE COFFEE LIST RENDERS! -->
+    </div>
+    <div class="controls">
     <form>
-        <label for="roast-selection"></label>
+        <label for="roast-selection">
+
+        </label>
         <select id="roast-selection">
             <option>light</option>
             <option>medium</option>
@@ -27,13 +32,9 @@
     </form>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
-    <ul id="coffees">
-        <!-- THIS IS WHERE THE COFFEE LIST RENDERS! -->
-    </ul>
+
 
 </div><!-- END .container -->
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

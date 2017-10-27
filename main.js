@@ -7,7 +7,7 @@ function renderCoffee(coffee) {
     html += '<td>' + coffee.roast + '</td>';
     html += '</tr>';
 
-    var html = "<li>" + "<a>" + "<h2>" + coffee.name + "</h2>" + "<p>" + coffee.roast + "</p>" + "</a>" + "</li>";
+    var html = "<section>" + "<span>" + "<h2>" + coffee.name + "</h2>" + "<p>" + coffee.roast + "</p>" + "</span>" + "</section>";
     return html;
 }
 
@@ -58,26 +58,24 @@ h2.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 
-
-
-
 //Filter List Sort
-
-function myFunction() {
+function myFilter() {
     // Declare variables
-    var input, filter, ul, li, a, i;
-    input = document.getElementById('myInput');
+    var input, filter, div, section, span, i;
+    input = document.getElementById('mySearch');
     filter = input.value.toUpperCase();
-    ul = document.getElementById("coffees");
-    li = ul.getElementsByTagName('li');
+    div = document.getElementById("coffees");
+    section = div.getElementsByTagName('section');
 
     // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+    for (i = 0; i < section.length; i++) {
+        span = section[i].getElementsByTagName("span")[0];
+        if (span.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            section[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+            section[i].style.display = "none";
         }
     }
 }
+
+

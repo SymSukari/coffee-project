@@ -1,12 +1,72 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+/*table {*/
+    /*border-collapse: collapse;*/
+    /*margin: 15px 0;*/
+/*}*/
+
+/*td, th {*/
+    /*border: 1px solid black;*/
+    /*padding: 5px 10px;*/
+/*}*/
+/*h1 {*/
+    /*text-align: center;*/
+/*}*/
+
+
+body {
+    background:white;
+    font-family:helvetica, sans-serif;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.container {
+    width:960px;
+    margin:0 auto;
+    display:block;}
+
+#coffees {
+    width:45%;
+    float:left;
 }
-h1 {
-    text-align: center;
+
+.controls {
+    width:45%;
+    float:left;
 }
+
+
+
+#coffees section {
+    float:left;
+    clear:both;
+}
+
+#coffees h2 {
+    font-size:30px;
+    color:#000;
+    float:left;
+    height:30px;
+    line-height:30px;
+}
+
+#coffees p {
+    font-size: 20px;
+    color: #aaa;
+    float: left;
+    height: 30px;
+    line-height: 45px;
+    margin: 20px;
+}
+
+
+#mySearch {
+    margin: 20px;
+    width: 200px;
+    padding: 5px;
+}
+
+
+select {
+    margin: 20px;
+    width: 137px;
+    height: 26px;
+}
+#submit {}
